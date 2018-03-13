@@ -1,0 +1,49 @@
+<html>
+<head>
+
+<script>
+function myFunction() 
+{
+
+    var name = document.getElementById("tb").value;
+    var rollno= document.getElementById("tb1").value;
+    var address=document.getElementById("a").value;
+    var gender=document.getElementById("gen").value;
+    var w = document.getElementById("cb1").value;
+    var r = document.getElementById("cb2").value;
+	var p=document.getElementById("pho").value;
+    
+window.alert(" NAME: "+name+"\n"+rollno+" \n Address : "+address" \n Gender: "+gender+" \n I have a 2 Wheeler: "+w+" \n I have a 4 Wheeler: "+y+" \n Photograph Path:"+p);
+}
+</script>
+
+
+    </head>
+
+ <body>
+ <form name="personal_info">
+ Name: 
+ <input type=text name="Name" id="tb"> <br><br/> 
+
+ Rollno: 
+ <input type=text name="rn" id="tb1" ><br><br/> 
+ 
+ Address:
+ <textarea cols=5 rows=5 id="a"></textarea><br><br> 
+ 
+ Gender: male<input type="radio" name="gen" id="rb1">  female<input type="radio" name="gen" id="rb2"><br></br>
+
+ I have a 2 Wheeler:<input type=checkbox value=on name="2w" id="cb1" checked><br><br> 
+ 
+ 
+ I have a 4 Wheeler:<input type=checkbox value=on name="4w" id="cb2"><br><br> 
+ 
+ 
+ Photograph:<input type="file" name="fileupload"id="pho" accept="image/*"><br>
+ 
+ <button onclick="myFunction()">Click Me</button>
+
+</form>
+
+ </body>
+ </html>
